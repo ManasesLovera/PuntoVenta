@@ -15,3 +15,6 @@ C:\Users\Manases\Documents\uapa\Septimo trimestre\Programacion lll\Trabajo Final
 C:\Users\Manases\Documents\uapa\Septimo trimestre\Programacion lll\Trabajo Final\Data\obj\Debug\net8.0\Data.pdb
 C:\Users\Manases\Documents\uapa\Septimo trimestre\Programacion lll\Trabajo Final\Data\obj\Debug\net8.0\Data.genruntimeconfig.cache
 C:\Users\Manases\Documents\uapa\Septimo trimestre\Programacion lll\Trabajo Final\Data\obj\Debug\net8.0\ref\Data.dll
+C:\Users\Manases\Documents\uapa\Septimo trimestre\Programacion lll\Trabajo Final\Data\bin\Debug\net8.0\Business.dll
+C:\Users\Manases\Documents\uapa\Septimo trimestre\Programacion lll\Trabajo Final\Data\bin\Debug\net8.0\Business.pdb
+C:\Users\Manases\Documents\uapa\Septimo trimestre\Programacion lll\Trabajo Final\Data\obj\Debug\net8.0\Data.sourcelink.json

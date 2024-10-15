@@ -144,3 +144,6 @@ C:\Users\Manases\Documents\uapa\Septimo trimestre\Programacion lll\Trabajo Final
 C:\Users\Manases\Documents\uapa\Septimo trimestre\Programacion lll\Trabajo Final\WebAPI\bin\Debug\net8.0\tr\Microsoft.CodeAnalysis.Workspaces.resources.dll
 C:\Users\Manases\Documents\uapa\Septimo trimestre\Programacion lll\Trabajo Final\WebAPI\bin\Debug\net8.0\zh-Hans\Microsoft.CodeAnalysis.Workspaces.resources.dll
 C:\Users\Manases\Documents\uapa\Septimo trimestre\Programacion lll\Trabajo Final\WebAPI\bin\Debug\net8.0\zh-Hant\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Users\Manases\Documents\uapa\Septimo trimestre\Programacion lll\Trabajo Final\WebAPI\bin\Debug\net8.0\Business.dll
+C:\Users\Manases\Documents\uapa\Septimo trimestre\Programacion lll\Trabajo Final\WebAPI\bin\Debug\net8.0\Business.pdb
+C:\Users\Manases\Documents\uapa\Septimo trimestre\Programacion lll\Trabajo Final\WebAPI\obj\Debug\net8.0\WebAPI.sourcelink.json
