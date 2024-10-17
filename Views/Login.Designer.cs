@@ -136,6 +136,7 @@
             btnLogin.TabIndex = 6;
             btnLogin.Text = "Ingresar";
             btnLogin.UseVisualStyleBackColor = false;
+            btnLogin.Click += btnLogin_Click;
             // 
             // cbSeePassword
             // 
