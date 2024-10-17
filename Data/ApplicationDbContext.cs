@@ -11,6 +11,11 @@ namespace Data
         public DbSet<SaleDetail> SaleDetails { get; set; }
         public DbSet<Report> Reports { get; set; }
 
+        protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
+        {
+            optionsBuilder.UseSqlServer("Server=DESKTOP-F6LB3V1;Database=PuntoVenta;Trusted_Connection=True;TrustServerCertificate=True;");
+        }
+
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
             // User entity
