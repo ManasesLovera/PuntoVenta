@@ -12,7 +12,7 @@ namespace Data.Repositories
 {
     public class SaleDetailRepository : GenericRepository<SaleDetail>, ISaleDetailRepository
     {
-        public SaleDetailRepository(ApplicationDbContext context) : base(context)
+        public SaleDetailRepository()
         {
         }
 

@@ -11,7 +11,7 @@ namespace Data.Repositories
 {
     public class SaleRepository : GenericRepository<Sale>, ISaleRepository
     {
-        public SaleRepository(ApplicationDbContext context) : base(context)
+        public SaleRepository()
         {
         }
 

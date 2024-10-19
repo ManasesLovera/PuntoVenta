@@ -7,26 +7,31 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using Data;
+using Microsoft.EntityFrameworkCore;
 using PuntoVenta.Business.Services;
 
 namespace PuntoVenta.Views
 {
     public partial class Admin : Form
     {
-        private readonly ProductService _productService;
+        private ApplicationDbContext? _context;
         public Admin(ProductService productService)
         {
             InitializeComponent();
-            _productService = productService;
+            _context = new ApplicationDbContext();
         }
         public Admin()
         {
             InitializeComponent();
         }
 
-        private async void Admin_Load(object sender, EventArgs e)
+        private void Admin_Load(object sender, EventArgs e)
         {
-            dgvProducts.DataSource = await _productService.GetAll();
+            if (_context != null)
+            {
+                dgvProducts.DataSource = _context.Products.Local.ToBindingList();
+            }
         }
     }
 }

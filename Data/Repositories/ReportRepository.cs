@@ -10,7 +10,7 @@ namespace Data.Repositories
 {
     public class ReportRepository : GenericRepository<Report>, IReportRepository
     {
-        public ReportRepository(ApplicationDbContext context) : base(context)
+        public ReportRepository()
         {
         }
     }

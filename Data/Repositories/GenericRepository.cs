@@ -12,9 +12,9 @@ namespace Data.Repositories
     {
         protected readonly ApplicationDbContext _context;
 
-        public GenericRepository(ApplicationDbContext context)
+        public GenericRepository()
         {
-            _context = context;
+            _context = new ApplicationDbContext();
         }
         public async Task AddAsync(T entity)
         {
