@@ -21,13 +21,13 @@ namespace PuntoVenta
             txtPassword.PasswordChar = cbSeePassword.Checked ? '\0' : '*';
         }
 
-        private async void btnLogin_Click(object sender, EventArgs e)
+        private void btnLogin_Click(object sender, EventArgs e)
         {
             string username = txtUsername.Text;
             string password = txtPassword.Text;
 
             // Call Authenticate method
-            var user = await AuthenticateAsync(username, password);
+            var user = Authenticate(username, password);
 
             if (user != null)
             {
@@ -36,33 +36,34 @@ namespace PuntoVenta
                 // Navigate based on role
                 if (user.Role == Role.Admin)
                 {
+                    this.Hide();
                     var dashboardForm = new Admin();
                     dashboardForm.ShowDialog();
+                    this.Show();
                 }
                 else if (user.Role == Role.Cashier)
                 {
+                    this.Hide();
                     var cashierForm = new Cashier();
                     cashierForm.ShowDialog();
+                    this.Show();
                 }
                 else
                 {
                     MessageBox.Show("Invalid user role!");
                 }
-
-                // Hide login form after successful login
-                this.Hide();
             }
             else
             {
                 MessageBox.Show("Invalid username or password.");
             }
         }
-        private async Task<User?> AuthenticateAsync(string username, string password)
+        private User? Authenticate(string username, string password)
         {
             if (_context == null) return null;
 
-            var user = await _context.Users
-                .FirstOrDefaultAsync(u => u.Username == username && u.Password == password);
+            var user = _context.Users
+                .FirstOrDefault(u => u.Username == username && u.Password == password);
 
             return user;
         }
