@@ -31,21 +31,21 @@
             label1 = new Label();
             tabControl1 = new TabControl();
             tabPage1 = new TabPage();
-            tabPage2 = new TabPage();
-            tabPage3 = new TabPage();
-            tabPage4 = new TabPage();
             labelIngresos = new Label();
             labelCajeros = new Label();
             labelVentas = new Label();
             labelProductos = new Label();
-            btnAgregar = new Button();
-            dgvProducts = new DataGridView();
-            txtSearchBar = new TextBox();
-            btnBuscar = new Button();
+            tabPage2 = new TabPage();
+            button5 = new Button();
+            textBox3 = new TextBox();
+            dgvAdminProducts = new DataGridView();
+            button6 = new Button();
+            tabPage3 = new TabPage();
             button1 = new Button();
             textBox1 = new TextBox();
             dataGridView1 = new DataGridView();
             button2 = new Button();
+            tabPage4 = new TabPage();
             button3 = new Button();
             textBox2 = new TextBox();
             dataGridView2 = new DataGridView();
@@ -53,10 +53,10 @@
             tabControl1.SuspendLayout();
             tabPage1.SuspendLayout();
             tabPage2.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)dgvAdminProducts).BeginInit();
             tabPage3.SuspendLayout();
-            tabPage4.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)dgvProducts).BeginInit();
             ((System.ComponentModel.ISupportInitialize)dataGridView1).BeginInit();
+            tabPage4.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)dataGridView2).BeginInit();
             SuspendLayout();
             // 
@@ -96,49 +96,6 @@
             tabPage1.Text = "Dashboard";
             tabPage1.UseVisualStyleBackColor = true;
             // 
-            // tabPage2
-            // 
-            tabPage2.Controls.Add(btnBuscar);
-            tabPage2.Controls.Add(txtSearchBar);
-            tabPage2.Controls.Add(dgvProducts);
-            tabPage2.Controls.Add(btnAgregar);
-            tabPage2.Font = new Font("Segoe UI", 10.2F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            tabPage2.Location = new Point(4, 29);
-            tabPage2.Name = "tabPage2";
-            tabPage2.Padding = new Padding(3);
-            tabPage2.Size = new Size(902, 525);
-            tabPage2.TabIndex = 1;
-            tabPage2.Text = "Productos";
-            tabPage2.UseVisualStyleBackColor = true;
-            // 
-            // tabPage3
-            // 
-            tabPage3.Controls.Add(button1);
-            tabPage3.Controls.Add(textBox1);
-            tabPage3.Controls.Add(dataGridView1);
-            tabPage3.Controls.Add(button2);
-            tabPage3.Location = new Point(4, 29);
-            tabPage3.Name = "tabPage3";
-            tabPage3.Padding = new Padding(3);
-            tabPage3.Size = new Size(902, 525);
-            tabPage3.TabIndex = 2;
-            tabPage3.Text = "Inventario";
-            tabPage3.UseVisualStyleBackColor = true;
-            // 
-            // tabPage4
-            // 
-            tabPage4.Controls.Add(button3);
-            tabPage4.Controls.Add(textBox2);
-            tabPage4.Controls.Add(dataGridView2);
-            tabPage4.Controls.Add(button4);
-            tabPage4.Location = new Point(4, 29);
-            tabPage4.Name = "tabPage4";
-            tabPage4.Padding = new Padding(3);
-            tabPage4.Size = new Size(902, 525);
-            tabPage4.TabIndex = 3;
-            tabPage4.Text = "Cajeros";
-            tabPage4.UseVisualStyleBackColor = true;
-            // 
             // labelIngresos
             // 
             labelIngresos.AutoSize = true;
@@ -175,51 +132,80 @@
             labelProductos.TabIndex = 4;
             labelProductos.Text = "Productos totales: ";
             // 
-            // btnAgregar
+            // tabPage2
             // 
-            btnAgregar.BackColor = Color.FromArgb(192, 255, 192);
-            btnAgregar.Cursor = Cursors.Hand;
-            btnAgregar.FlatAppearance.BorderColor = Color.Green;
-            btnAgregar.FlatStyle = FlatStyle.Flat;
-            btnAgregar.ForeColor = Color.FromArgb(0, 64, 0);
-            btnAgregar.Location = new Point(36, 35);
-            btnAgregar.Name = "btnAgregar";
-            btnAgregar.Size = new Size(91, 33);
-            btnAgregar.TabIndex = 0;
-            btnAgregar.Text = "Agregar";
-            btnAgregar.UseVisualStyleBackColor = false;
+            tabPage2.Controls.Add(button5);
+            tabPage2.Controls.Add(textBox3);
+            tabPage2.Controls.Add(dgvAdminProducts);
+            tabPage2.Controls.Add(button6);
+            tabPage2.Font = new Font("Segoe UI", 10.2F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            tabPage2.Location = new Point(4, 29);
+            tabPage2.Name = "tabPage2";
+            tabPage2.Padding = new Padding(3);
+            tabPage2.Size = new Size(902, 525);
+            tabPage2.TabIndex = 1;
+            tabPage2.Text = "Productos";
+            tabPage2.UseVisualStyleBackColor = true;
             // 
-            // dgvProducts
+            // button5
             // 
-            dgvProducts.AllowUserToOrderColumns = true;
-            dgvProducts.AutoSizeRowsMode = DataGridViewAutoSizeRowsMode.AllCells;
-            dgvProducts.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dgvProducts.Location = new Point(36, 100);
-            dgvProducts.Name = "dgvProducts";
-            dgvProducts.RowHeadersWidth = 51;
-            dgvProducts.Size = new Size(820, 385);
-            dgvProducts.TabIndex = 1;
+            button5.BackColor = Color.FromArgb(192, 255, 255);
+            button5.Cursor = Cursors.Hand;
+            button5.FlatAppearance.BorderColor = Color.Navy;
+            button5.FlatStyle = FlatStyle.Flat;
+            button5.ForeColor = Color.Navy;
+            button5.Location = new Point(765, 34);
+            button5.Name = "button5";
+            button5.Size = new Size(94, 33);
+            button5.TabIndex = 11;
+            button5.Text = "Buscar";
+            button5.UseVisualStyleBackColor = false;
             // 
-            // txtSearchBar
+            // textBox3
             // 
-            txtSearchBar.Location = new Point(576, 38);
-            txtSearchBar.Name = "txtSearchBar";
-            txtSearchBar.Size = new Size(171, 30);
-            txtSearchBar.TabIndex = 2;
+            textBox3.Location = new Point(579, 37);
+            textBox3.Name = "textBox3";
+            textBox3.Size = new Size(171, 30);
+            textBox3.TabIndex = 10;
             // 
-            // btnBuscar
+            // dgvAdminProducts
             // 
-            btnBuscar.BackColor = Color.FromArgb(192, 255, 255);
-            btnBuscar.Cursor = Cursors.Hand;
-            btnBuscar.FlatAppearance.BorderColor = Color.Navy;
-            btnBuscar.FlatStyle = FlatStyle.Flat;
-            btnBuscar.ForeColor = Color.Navy;
-            btnBuscar.Location = new Point(762, 35);
-            btnBuscar.Name = "btnBuscar";
-            btnBuscar.Size = new Size(94, 33);
-            btnBuscar.TabIndex = 3;
-            btnBuscar.Text = "Buscar";
-            btnBuscar.UseVisualStyleBackColor = false;
+            dgvAdminProducts.AllowUserToOrderColumns = true;
+            dgvAdminProducts.AutoSizeRowsMode = DataGridViewAutoSizeRowsMode.AllCells;
+            dgvAdminProducts.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            dgvAdminProducts.Location = new Point(39, 99);
+            dgvAdminProducts.Name = "dgvAdminProducts";
+            dgvAdminProducts.RowHeadersWidth = 51;
+            dgvAdminProducts.Size = new Size(820, 385);
+            dgvAdminProducts.TabIndex = 9;
+            // 
+            // button6
+            // 
+            button6.BackColor = Color.FromArgb(192, 255, 192);
+            button6.Cursor = Cursors.Hand;
+            button6.FlatAppearance.BorderColor = Color.Green;
+            button6.FlatStyle = FlatStyle.Flat;
+            button6.ForeColor = Color.FromArgb(0, 64, 0);
+            button6.Location = new Point(39, 34);
+            button6.Name = "button6";
+            button6.Size = new Size(91, 33);
+            button6.TabIndex = 8;
+            button6.Text = "Agregar";
+            button6.UseVisualStyleBackColor = false;
+            // 
+            // tabPage3
+            // 
+            tabPage3.Controls.Add(button1);
+            tabPage3.Controls.Add(textBox1);
+            tabPage3.Controls.Add(dataGridView1);
+            tabPage3.Controls.Add(button2);
+            tabPage3.Location = new Point(4, 29);
+            tabPage3.Name = "tabPage3";
+            tabPage3.Padding = new Padding(3);
+            tabPage3.Size = new Size(902, 525);
+            tabPage3.TabIndex = 2;
+            tabPage3.Text = "Inventario";
+            tabPage3.UseVisualStyleBackColor = true;
             // 
             // button1
             // 
@@ -266,6 +252,20 @@
             button2.TabIndex = 4;
             button2.Text = "Agregar";
             button2.UseVisualStyleBackColor = false;
+            // 
+            // tabPage4
+            // 
+            tabPage4.Controls.Add(button3);
+            tabPage4.Controls.Add(textBox2);
+            tabPage4.Controls.Add(dataGridView2);
+            tabPage4.Controls.Add(button4);
+            tabPage4.Location = new Point(4, 29);
+            tabPage4.Name = "tabPage4";
+            tabPage4.Padding = new Padding(3);
+            tabPage4.Size = new Size(902, 525);
+            tabPage4.TabIndex = 3;
+            tabPage4.Text = "Cajeros";
+            tabPage4.UseVisualStyleBackColor = true;
             // 
             // button3
             // 
@@ -328,12 +328,12 @@
             tabPage1.PerformLayout();
             tabPage2.ResumeLayout(false);
             tabPage2.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)dgvAdminProducts).EndInit();
             tabPage3.ResumeLayout(false);
             tabPage3.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)dataGridView1).EndInit();
             tabPage4.ResumeLayout(false);
             tabPage4.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)dgvProducts).EndInit();
-            ((System.ComponentModel.ISupportInitialize)dataGridView1).EndInit();
             ((System.ComponentModel.ISupportInitialize)dataGridView2).EndInit();
             ResumeLayout(false);
             PerformLayout();
@@ -351,10 +351,6 @@
         private Label labelCajeros;
         private Label labelVentas;
         private Label labelProductos;
-        private Button btnAgregar;
-        private Button btnBuscar;
-        private TextBox txtSearchBar;
-        private DataGridView dgvProducts;
         private Button button1;
         private TextBox textBox1;
         private DataGridView dataGridView1;
@@ -363,5 +359,9 @@
         private TextBox textBox2;
         private DataGridView dataGridView2;
         private Button button4;
+        private Button button5;
+        private TextBox textBox3;
+        private DataGridView dgvAdminProducts;
+        private Button button6;
     }
 }

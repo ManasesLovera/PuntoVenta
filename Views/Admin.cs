@@ -16,22 +16,17 @@ namespace PuntoVenta.Views
     public partial class Admin : Form
     {
         private ApplicationDbContext? _context;
-        public Admin(ProductService productService)
-        {
-            InitializeComponent();
-            _context = new ApplicationDbContext();
-        }
         public Admin()
         {
             InitializeComponent();
+            
         }
 
         private void Admin_Load(object sender, EventArgs e)
         {
-            if (_context != null)
-            {
-                dgvProducts.DataSource = _context.Products.Local.ToBindingList();
-            }
+            _context = new ApplicationDbContext();
+            this._context.Products.Load();
+            dgvAdminProducts.DataSource = _context.Products.Local.ToBindingList();
         }
     }
 }
