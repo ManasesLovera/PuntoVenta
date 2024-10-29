@@ -39,12 +39,12 @@
             textBox1 = new TextBox();
             dataGridView1 = new DataGridView();
             button2 = new Button();
-            label1 = new Label();
             tabPage4 = new TabPage();
             button3 = new Button();
             textBox2 = new TextBox();
             dataGridView2 = new DataGridView();
             button4 = new Button();
+            label1 = new Label();
             tabControl1.SuspendLayout();
             tabPage2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)dgvProducts).BeginInit();
@@ -186,16 +186,6 @@
             button2.Text = "Agregar";
             button2.UseVisualStyleBackColor = false;
             // 
-            // label1
-            // 
-            label1.AutoSize = true;
-            label1.Font = new Font("Segoe UI", 13.8F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            label1.Location = new Point(40, 11);
-            label1.Name = "label1";
-            label1.Size = new Size(179, 31);
-            label1.TabIndex = 2;
-            label1.Text = "PuntoVenta APP";
-            // 
             // tabPage4
             // 
             tabPage4.Controls.Add(button3);
@@ -256,6 +246,16 @@
             button4.Text = "Agregar";
             button4.UseVisualStyleBackColor = false;
             // 
+            // label1
+            // 
+            label1.AutoSize = true;
+            label1.Font = new Font("Segoe UI", 13.8F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            label1.Location = new Point(40, 11);
+            label1.Name = "label1";
+            label1.Size = new Size(179, 31);
+            label1.TabIndex = 2;
+            label1.Text = "PuntoVenta APP";
+            // 
             // Cashier
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
@@ -265,6 +265,7 @@
             Controls.Add(label1);
             Name = "Cashier";
             Text = "Cashier";
+            Load += Cashier_Load;
             tabControl1.ResumeLayout(false);
             tabPage2.ResumeLayout(false);
             tabPage2.PerformLayout();
