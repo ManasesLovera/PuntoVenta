@@ -31,8 +31,6 @@ namespace PuntoVenta
 
             if (user != null)
             {
-                MessageBox.Show("Login successful!");
-
                 // Navigate based on role
                 if (user.Role == Role.Admin)
                 {
